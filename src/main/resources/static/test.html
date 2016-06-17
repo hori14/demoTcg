@@ -1,0 +1,78 @@
+<html>
+
+<head>
+	<title>card add</title>
+	
+<style>
+form div label{
+	display: inline-block;
+	width: 50px;
+	
+	margin: 5px;
+}
+</style>
+
+</head>
+
+<body>
+
+<form method="post" action="/card">
+	<div class="name">
+		<label>Name</label><input name="name" value="" />
+	</div>
+	<div>
+		<label>Power</label><input name="power" value="" />
+	</div>
+	<div>
+		<label>health</label><input name="health" value="" />
+	</div>
+	<div>
+		<label>cost</label><input name="cost" value="" />
+	</div>
+	<div>
+		<label>등급</label>
+		<select name="grade">
+			<option value="1">일반</option>
+			<option value="2">희귀</option>
+			<option value="3">영웅</option>
+			<option value="4">전설</option>
+		</select>
+	</div>
+	<div>
+		<label>직업</label>
+		<select name="race">
+			<option value="99">중립카드</option>
+			
+			<option value="1">마법사</option>
+			<option value="2">전사</option>
+			<option value="3">주술사</option>
+			<option value="4">사냥꾼</option>
+			<option value="5">흑마법사</option>
+			<option value="6">드루이드</option>
+			<option value="7">도적</option>
+			<option value="8">사제</option>
+			<option value="9">성기사</option>
+			
+		</select>
+	</div>
+	
+	<div>
+		<label>버젼</label>
+		<select name="race">
+			
+			<option value="1">기본</option>
+			<option value="2">고블린과 놈</option>
+			<option value="3">낙스라마스</option>
+			<option value="4">검은바위산</option>
+			<option value="5">대마상시합</option>
+			<option value="6">탐험가연맹</option>
+			<option value="7">고대신</option>
+			
+		</select>
+	</div>
+	
+	<input type="submit" value="전송" />
+</form>
+
+</body>
+</html>
