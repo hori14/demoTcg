@@ -1,7 +1,9 @@
 package com.tcg.model;
 
+import lombok.Data;
 import org.springframework.security.core.authority.AuthorityUtils;
 
+@Data
 public class CurrentUser extends org.springframework.security.core.userdetails.User{
 	
 	/**
@@ -11,7 +13,7 @@ public class CurrentUser extends org.springframework.security.core.userdetails.U
 	
 	private User user;
 	private Authorities auth;
-	
+
 	public CurrentUser(User user, Authorities auth)
 	{
 		super(user.getUsername(), user.getPassword(), AuthorityUtils.createAuthorityList( auth.getAuthority() ) );

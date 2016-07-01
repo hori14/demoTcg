@@ -17,6 +17,7 @@ apply plugin: 'eclipse-wtp'
 apply plugin: 'spring-boot' 
 apply plugin: 'war'
 apply plugin: 'wro4j'
+apply plugin: 'idea'
 
 
 war {
